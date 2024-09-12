@@ -3,8 +3,8 @@
 ## Introduction
 * McPhee's story
 * Anti-Productivity movement
-        * Great Resignation
-        * Quiet quitting
+    * Great Resignation
+    * Quiet quitting
 * Introduction of the concept of Slow Productivity
 
 ## Pseudo Productivity
