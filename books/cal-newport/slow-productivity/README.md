@@ -45,7 +45,5 @@
 * Focus on fewer things -> better results
 * This does not mean to achieving less, by focusing on a fewer things, you actually accomplish more
 
-## Principles
-
 ## Conclusion (so far)
 * As a non native speaker, I find the language in this book a bit complex. Apart from that, it's very interesting. I'm a big fan of Cal Newport, so I might be a bit biased in my opinion.
