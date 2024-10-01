@@ -1,0 +1,70 @@
+# Kafka for beginners
+
+## Theory
+    - Topic: Stream of data
+        - Like a table in the db but without constraints
+        - Identify by name
+        - any kind of message format
+        - sequence of messages -> data stream
+        - Producer <-> Consumer
+        - Data is kept only for a limited time
+    - Partition
+        - Topics are split in partitions
+        - Messages are ordered within partitions and they get an incremental id (offset)
+        - Topics are immutable -> data is written to a partition, it cannot be changed
+        - Offsets are not re-used (even if prev messages have been deleted)
+        - Order is guaranteed only within a partition
+        - Data is assigned randomly to a partition unless a key is provided
+    - Producers
+        - write data to topics
+        - know which partition to write to
+        - automatically recover
+        - load balancer
+        - key in the message
+            - key = null -> round robin
+            - key != null -> same key => same partition
+    - Kafka message
+        - key: binary
+        - value binary
+        - compression type
+        - headers
+        - partition + offset
+        - timestamp
+    - Kafka message Serializer
+        -  used on the value and on the key to create binary messages
+    - Consumer
+        - Pull model
+        - Reads data in order from partitions
+        - automatically recover
+    - Consumer deserializer
+    - Consumer group
+        - you can have multiple consumer groups on a topic
+        - inside a consumer group, only one consumer is going to be assinged to one partition
+        - group.id
+        - __consumer_offsets - it helps the recovery
+        - Delivery semantics for consumers
+            - At least once - after messages is processed - idempotent messages
+            - At most once
+            - Exactly once
+    - Brokers
+        - set of brokers -> Cluster
+        - Each broker contains certain topic partitions
+        - connecting to any broker -> you will be connected to the entire cluster
+            - bootstrap broker
+        - Broker discovery
+    - Topic replication factor
+        - Leader for a Partition
+            - Producers only write to the leader broker for a partition
+            - Consumers by default will read from the leader broker for a partition
+        - Kafka Consumers Replica Fetching
+            - Latency / network costs
+    - Producer acknowledgements
+        - acks=0 / 1 (leader) / a11 (leader + replicas)
+    - Kafka Topic Durability
+        - replication factor 3 -> withstand 2 brokers loss
+        - N-1 brokers loss -> still recover
+    - Zookeeper
+        - Manage brokers, help performing leader election for partitions
+        - Leader and followers
+    - Kafka Kraft
+        
