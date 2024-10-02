@@ -45,5 +45,22 @@
 * Focus on fewer things -> better results
 * This does not mean to achieving less, by focusing on a fewer things, you actually accomplish more
 
+
+#### Proposition: Limit the big
+* Story of Andrew Will (mathematician)
+* Limit Missions
+    * 1: too idealistic
+    * 2-3: optimal
+    * > 5: too much
+* Limit Projects
+    * book them into the calendar so you can say no more confidently to new requests
+    * limit the time you spend on each projects
+    * padding the time to make sure you have enough time to complete the task
+* Limit daily goals
+    * Try to work on only one project per day
+
+#### Proposition: Contain the small
+* Story of Benjamin Franklin
+
 ## Conclusion (so far)
 * As a non native speaker, I find the language in this book a bit complex. Apart from that, it's very interesting. I'm a big fan of Cal Newport, so I might be a bit biased in my opinion.
