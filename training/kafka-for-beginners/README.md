@@ -67,4 +67,5 @@
         - Manage brokers, help performing leader election for partitions
         - Leader and followers
     - Kafka Kraft
-        
+
+## Setting up Kafka
